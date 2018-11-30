@@ -1,0 +1,53 @@
+<html>
+<head>
+<title> Week 02 - Processing Form Select Boxes </title>
+
+<style type="text/css">
+  select {
+     display: block; width: 180px; height: 100px; margin-bottom: 10px;
+  }
+  br {
+     clear: left;
+  }
+  #subbut {
+     width:100px; margin-top:10px; border:thin solid black; position:relative;
+     left:15px; font-size:70%;
+  }
+</style>
+</head>
+<body>
+<h1>Your Favorite Things</h1>
+
+<form method="post" action="week02.php"> <!--FormStart-->
+<div>
+Favorite number: <INPUT type="text" name="num" id="num">
+<p>Select two or more favorite activities:<br>
+
+<select multiple name="favs[]" id="favs[]">
+<option >read a book</option>
+<option>play video games</option>
+<option>shop at the mall</option>
+<option>watch scifi </option>
+<option>listen to music</option>
+<option>eat</option>
+<option>run</option>
+</select>
+</p>
+
+<p>
+Select your favorite animals:<br />
+<li>Dogs<input type="checkbox" name="animals[]" value="dogs" /></li>
+<li>Cats<input type="checkbox" name="animals[]" value="cats" /></li>
+<li>Ducks<input type="checkbox" name="animals[]" value="ducks" /></li>
+<li>Chickens<input type="checkbox" name="animals[]" value="chickens" /></li>
+</p>
+
+<p>
+<input id="submit" type="submit" value="Submit FORM">
+<INPUT ID="submit" TYPE="reset" VALUE="Clear FORM">
+</p>
+</div>
+</form><!--EndForm-->
+
+</body>
+</html>
