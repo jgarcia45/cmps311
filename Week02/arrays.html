@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> a simple form </title>
+
+<style type="text/css">
+
+  label, textarea, select
+  {
+     display: block; width: 180px; float: left; margin-bottom: 10px;
+  }
+  label
+  {
+     text-align: right; width: 95px; padding-right: 20px; font-weight:bold;          font-size:83%;
+  }
+  br
+  {
+     clear: left;
+  }
+  #subbut
+  {
+     width:100px; margin-top:10px; border:thin solid black; position:relative;
+     left:115px; font-size:70%;
+  }
+  .req
+  {
+    color:#a00;
+  }
+  #note
+  {
+     width:180px; color:#a00; margin-left:115px; font-size:83%;
+  }
+</style>
+</head>
+
+
+<body>
+<h1>My Favorite Animals </h1>
+
+<FORM method="post" action="arrays.php">
+<div>
+
+<p>
+Pick One or More Favorite Animals: </p>
+<li>dogs <INPUT type="checkbox" name="favs[]" value="dogs">  </li>
+<li>cats <INPUT type="checkbox" name="favs[]" value="cats">  </li>
+<li>ducks <INPUT type="checkbox" name="favs[]" value="ducks">  </li>
+<li>birds <INPUT type="checkbox" name="favs[]" value="birds"> </li>
+</p>
+<p>
+<input id="subbut" type="submit" value="Submit FORM">
+<INPUT ID="subbut" TYPE="reset" VALUE="Clear FORM">
+</p>
+
+</form>
+</body>
+</html>
